@@ -28,3 +28,31 @@ Profesional y docente apasionado por la innovación, la transformación digital 
 Comparto conocimiento también desde La FábricaW y mi academia Aprende AI Fácil (aprendeaifacil.com), acercando la inteligencia artificial a profesionales que buscan aprender, experimentar y aplicar.
 
 En este GitHub comparto proyectos, recursos y experimentos que conectan tecnología, academia y práctica profesional bajo una idea simple: "Menos tiempo, más resultados."
+
+
+<style>
+  .contact-icons a[title="LinkBio"] img {
+    transition: opacity 0.15s ease-in-out;
+  }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var linkbioLink = document.querySelector('.contact-icons a[title="LinkBio"]');
+      if (linkbioLink) {
+        var img = linkbioLink.querySelector('img');
+        if (img) {
+          var defaultSrc = img.getAttribute('src');
+          var hoverSrc = defaultSrc.replace('linkbio_logo.png', 'linkbio_logo_hover.png');
+          linkbioLink.addEventListener('mouseenter', function () {
+            img.setAttribute('src', hoverSrc);
+          });
+          linkbioLink.addEventListener('mouseleave', function () {
+            img.setAttribute('src', defaultSrc);
+          });
+        }
+      }
+    });
+  </script>
+  </script>
+</style>
